@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Atvaltas.css">
+    <title>JavaScript - Átváltás</title>
+
+    <script>
+        function LengthConverter(valNum) {
+            document.getElementById("outputMeters").innerHTML = valNum / 3.2808;
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Mértékegység Átváltás</h1>
+    <p>Adjon meg egy számot, mi pedig átváltjuk önnek.</p>
+
+    <p>
+        <label>Láb</label>
+        <input id="inputFeet" type="number" placeholder="Láb" oninput="LengthConverter(this.value)"
+            onchange="LengthConverter(this.value)">
+    </p>
+    <p>Méter: <span id="outputMeters">m</span></p>
+
+
+</body>
+
+</html>

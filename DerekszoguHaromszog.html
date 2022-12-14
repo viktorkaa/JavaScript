@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="DerekszoguHaromszog.css">
+    <title>JavaScript - Derékszögű háromszög</title>
+
+
+    <script>
+        function derekszoguE() {
+            let a = parseInt(document.getElementById("a").value)
+            let b = parseInt(document.getElementById("b").value)
+            let c = parseInt(document.getElementById("c").value)
+
+            if (Math.pow(a, 2) + Math.pow(b, 2) == Math.pow(c, 2)) {
+                document.getElementById("derekszoguE").innerHTML = "Ez egy derékszügű háromszög!"
+            }
+            else {
+                document.getElementById("derekszoguE").innerHTML = "Ez nem egy derékszügű háromszög!"
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <form>
+        <h1>Derekszog</h1>
+        <h2>Adjon meg egy tetszőleges számokat.</h2>
+        <span>Első szám: </span><br><input type="number" id="a"><br><br>
+        <span>Második szám: </span><br><input type="number" id="b"><br><br>
+        <span>Harmadik szám: </span><br><input type="number" id="c"><br><br>
+        <br><button type="button" onclick="derekszoguE()">Ellenőrzés</button>
+        <p id="derekszoguE"></p>
+    </form>
+        
+</body>
+
+</html>

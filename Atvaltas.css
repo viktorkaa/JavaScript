@@ -1,0 +1,42 @@
+input[type="email"]::placeholder {
+
+    text-align: center;
+}
+
+input[type="text"]::placeholder {
+
+    text-align: right;
+}
+
+input[type="tel"]::placeholder {
+
+    text-align: left;
+}
+
+input[type="email"]:-ms-input-placeholder {
+
+    text-align: center;
+}
+
+input[type="email"]::-ms-input-placeholder {
+
+    text-align: center;
+}
+
+body {
+    text-align: center;
+}
+
+h1 {
+    color: green;
+}
+
+input {
+    border-radius: 10px;
+    background-color: rgb(238, 234, 234);
+    border:2px solid black;
+}
+
+button {
+    border-radius: 10px;
+}
